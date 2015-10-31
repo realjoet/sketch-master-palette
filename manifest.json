@@ -1,0 +1,44 @@
+{
+  "name": "Master Palette",
+  "description": "Created to turn your document colors into variables, so when you change a document color any layer that uses that color will change as well",
+  "author": "Joe Toscano",
+  "email": "realjoet9@gmail.com",
+  "twitter": "@realjoet",
+  "medium": "@realjoet",
+  "homepage": "http://github.com/example/sketchplugins",
+  "version": 1.0,
+  "identifier": "com.example.sketch.master-palette",
+  "updateURL": "https://github.com/downloads/example/sketchplugins/sketchplugins.json",
+  "compatibleVersion": 3,
+  "bundleVersion": 1,
+  "commands": [
+    //Defines where to find shared.js
+    {
+      "name": "All",
+      "identifier": "all",
+      "shortcut": "command shift c",
+      "script": "shared.js",
+      "handler": "selectAll"
+    },
+    //Defines how to find Select Circles.js
+    {
+      "name": "Circles",
+      "identifier": "circles",
+      "script": "Select Circles.js"
+    },
+    //Defines how to find Select Rectangles.js
+    {
+      "name": "Rectangles",
+      "identifier": "rectangles",
+      "script": "Select Rectangles.js"
+    }
+  ],
+  //Defines what files get brought in
+  "menu": {
+    "items": [
+      "all",
+      "circles",
+      "rectangles"
+    ]
+  }
+}
